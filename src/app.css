@@ -16,9 +16,7 @@ body{
 }
 
 .container{
-    width:350px;
-    border:1px solid black;
-    
+    width:350px;    
 }
 
 .header{
@@ -43,9 +41,75 @@ body{
 }
 
 .incomeexpense{
+    margin: auto;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(170, 170, 170);
+    margin-bottom: 10px;
+}
+
+.incomeexpense div{
+    text-align: center;
+
+}
+
+.incomeexpense div p:first-child{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.list{
+    list-style: none;
+}
+
+.list li {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     box-shadow: 4px 4px 4px rgb(170, 170, 170);
+    margin-bottom: 5px;
+}
+
+.list li button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.list li:hover button{
+    visibility: visible;
+}
+
+.minus{
+    border-right: 3px solid red;
+}
+
+.plus{
+    border-right: 3px solid green;
+}
+
+label{
+    display: inline-block;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgb(184, 182, 182);
+    margin-bottom: 5px;
+}
+
+.addtransaction button{
+    width: 100%;
+    border:none;
+    padding: 5px;
+    background-color: #9c88ff;
+    color: white;
+    cursor: pointer;
 }
