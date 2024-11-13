@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { GlobalContext } from "../UseContext/UseContext"
-
+import CountUp from "react-countup"
 
 const Balance = () => {
 
@@ -12,7 +12,14 @@ const Balance = () => {
   return (
     <div className="balance">
         <h2>Your Balance</h2>
-        <h3>${total}</h3>
+        <h3><CountUp
+        start={0}
+        end={parseInt(total)}
+        duration={1.5}
+        prefix="$"
+        separator=" "
+        decimals={2}></CountUp>
+          </h3>
     </div>
   )
 }
